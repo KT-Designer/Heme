@@ -389,6 +389,7 @@ footer p {
     padding: 16px 10px 16px 10px;
     background-color: #022E31;
     box-shadow: 0px -18px 75px 0px rgba(0, 0, 0, 0.98);
+    font-size: 12px;
 }
 
 footer img {
