@@ -1,0 +1,425 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+body {
+    background-color: #002F33;
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* 置頂鍵 */
+#scrolltop {
+    position: fixed;
+    font-size: 16px;
+    font-weight: 600;
+    color: #008f83;
+    bottom: 90px;
+    right: 15px;
+    padding: 12px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100px;
+    display: block;
+    z-index: 9999;
+}
+
+
+/* 小雪人 */
+.snowman {
+    position: fixed;
+    bottom: -4px;
+    left: 0px;
+    z-index: 1;
+
+}
+
+.snowman img {
+    width: 80%;
+    max-width: 226px;
+    height: auto;
+}
+
+.snowman .message {
+    padding-left: 30px;
+    transform: rotate(-10deg);
+    background-color: #7C060B;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.snowman p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+
+
+/* 浮動主選單_監聽(.active配合JS) */
+.menu_pc .anchor-link.active {
+    background-color: #000000;
+}
+
+
+
+
+/* PC導覽列 */
+
+.open {
+    position: fixed;
+    top: 60px;
+    right: -50px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    writing-mode: vertical-lr;
+    padding: 18px 8px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 14px 0px 0px 14px;
+    cursor: pointer;
+}
+
+.open:hover {
+    background-color: #7C060B;
+}
+
+.menu_pc {
+    color: #FFFFFF;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_pc .close {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu_pc .close p {
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+.menu_pc ul {
+    list-style: none;
+}
+
+.menu_pc li {
+    text-align: center;
+    max-width: 115px;
+    max-height: 45px;
+    padding: 10px 0px;
+    background-color: #82060B;
+    margin-bottom: 4px;
+}
+
+.menu_pc li:hover {
+    background-color: #000000;
+
+}
+
+.menu_pc ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu_pc .top {
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* 手機導覽列 */
+.menu_mb {
+    position: fixed;
+    bottom: 0px;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.98);
+
+
+
+}
+
+.menu_mb ul {
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.menu_mb ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_mb ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu_mb ul li img {
+    width: 80%;
+    height: auto;
+}
+
+.menu_mb ul p {
+    font-size: 14px;
+}
+
+.menu_mb ul li:hover p {
+    color: #008f83;
+}
+
+
+
+
+
+
+
+
+
+/* 主視覺 */
+
+.kv_pc,
+.kv_mb {
+    background-image: url(../images/kvbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 輪播PC */
+.kv_pc {
+    position: relative;
+}
+
+.kv_pc .container {
+    width: 100%;
+    max-width: 414px;
+    position: absolute;
+    left: 36%;
+    top: 30%;
+}
+
+.kv_pc .carousel-indicators {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/* 活動禮 */
+.gift .container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.gift img {
+    transition: transform 0.5s ease;
+}
+
+.gift img:hover {
+    transform: translateY(-18px);
+
+
+}
+
+
+
+
+/* 底妝 */
+.base .myclass img,
+.base .container {
+    width: 100%;
+    max-width: 990px;
+}
+
+.base .myclass img {
+    border-radius: 100px 0px 0px 0px;
+}
+
+.base .card {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.base .card::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 10px;
+    z-index: -1;
+    background: repeating-linear-gradient(-45deg, #7C060B 0, #7C060B 20px, #004C46 20px, #004C46 30px);
+}
+
+.base .card .pic {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.base .card img {
+    transition: transform 1.3s;
+}
+
+.base .card:hover img {
+    overflow: hidden;
+    transform: scale(1.3);
+}
+
+.base .card .title {
+    color: #FFFFFF;
+}
+
+
+.base .card:hover .title {
+    background-color: #7C060B;
+}
+
+
+.base .title {
+    background-color: #004C46;
+    padding: 6px;
+    border-radius: 50px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.base .card h6 {
+    font-weight: 600;
+}
+
+.base .card .price {
+    color: #797979;
+}
+
+
+.base .card .sale {
+    font-size: 30px;
+    font-weight: 900;
+    color: #a80006;
+}
+
+
+/* footer */
+footer p {
+    color: #FFFFFF;
+    padding: 16px 10px 16px 10px;
+    background-color: #022E31;
+    box-shadow: 0px -18px 75px 0px rgba(0, 0, 0, 0.98);
+}
+
+footer img {
+    max-width: 30px;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .kv_pc .pic {
+        width: 100vh;
+        height: 667px;
+        object-fit: cover;
+    }
+
+
+    .kv_pc .container {
+        width: 80%;
+        left: 29%;
+        top: 27%;
+    }
+
+    .kv_pc .carousel-indicators {
+        position: relative;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /* 輪播MB */
+
+    .kv_mb .pic {
+        width: 100%;
+    }
+
+    .kv_mb {
+        position: relative;
+    }
+
+    .kv_mb .container {
+        width: 60%;
+        position: absolute;
+        left: 22%;
+        top: 28%;
+    }
+
+    .kv_mb .carousel-indicators {
+        position: relative;
+        margin-top: 10px;
+    }
+
+
+    /* 底妝 */
+    .base .myclass img {
+        border-radius: 40px 0px 0px 0px;
+    }
+
+
+
+}
