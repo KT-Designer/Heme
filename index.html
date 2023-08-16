@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- 下雪 -->
+    <link rel="stylesheet" href="./css/snow.css">
+
     <title>聖誕彩妝購</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -17,11 +20,40 @@
     <div id="scrolltop" class="d-block d-md-none">Top</div>
 
 
+    <!-- 下雪 -->
+    <snowfall>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+        <snowflake><img src="./images/snow.png">️</snowflake>
+    </snowfall>
+
+
+
+
+
 
 
     <!-- 小雪人 -->
     <div class="snowman d-none d-md-block">
-        <div id="snow"></div>
+        <div id="snowman"></div>
         <div class="message m-2">
             <p class="m-0 text">耶誕快樂</p>
         </div>
@@ -31,7 +63,7 @@
 
 
     <!-- PC導覽列 -->
-    <div class="open">彩妝欄</div>
+    <div class="open d-none d-md-block">彩妝欄</div>
 
 
     <nav class="menu_pc text-center d-none d-md-block">
@@ -102,6 +134,7 @@
 
     <!-- 主視覺_輪播PC -->
     <div class="kv_pc text-center d-none d-md-block" id="kv">
+        <img src="./images/bell.png" alt="" class="bell d-none d-lg-block">
         <img src="./images/kv.png" alt="" class="pic img-fluid">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1300">
@@ -197,7 +230,6 @@
             </div>
         </div>
     </div>
-
 
 
 
@@ -625,8 +657,8 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <!-- 下雪 -->
-    <script src="./js/snow.js"></script>
+
+
 
     <!-- 小雪人下雪 -->
     <script src="./js/snowman.js"></script>

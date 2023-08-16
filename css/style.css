@@ -39,11 +39,6 @@ a:hover {
     z-index: 9999;
 }
 
-/* 下雪 */
-
-
-
-
 
 
 /* 小雪人 */
@@ -52,6 +47,7 @@ a:hover {
     bottom: -4px;
     left: 0px;
     z-index: 1;
+
 
 }
 
@@ -236,6 +232,25 @@ a:hover {
     background-image: url(../images/kvbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.kv_pc .bell {
+    position: absolute;
+    top: -1%;
+    left: 17%;
+    animation: bell 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes bell {
+
+
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
 }
 
 
