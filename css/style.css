@@ -333,6 +333,7 @@ a:hover {
 
 .base .title {
     background-color: #004C46;
+    font-size: 14px;
     padding: 6px;
     border-radius: 50px;
     margin-top: 8px;
@@ -340,7 +341,7 @@ a:hover {
 }
 
 .base .card h6 {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .base .card .price {
