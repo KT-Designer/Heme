@@ -39,6 +39,12 @@ a:hover {
     z-index: 9999;
 }
 
+/* 下雪 */
+
+
+
+
+
 
 /* 小雪人 */
 .snowman {
@@ -71,7 +77,7 @@ a:hover {
     font-weight: 400;
 }
 
-#snow {
+#snowman {
     position: fixed;
     top: 0;
     left: 0;
@@ -276,7 +282,13 @@ a:hover {
 
 
 /* 底妝 */
-.base .myclass img,
+
+.base .myclass img {
+    width: 100%;
+    max-width: 980px;
+}
+
+
 .base .container {
     width: 100%;
     max-width: 990px;
