@@ -681,6 +681,13 @@
     <script src="./js/aos.js"></script>
     <script>
         AOS.init();
+        // 禁用手機和平板
+        AOS.init({
+            disable: "phone"
+        });
+        AOS.init({
+            disable: "tablet"
+        });
     </script>
     <!-- 小雪人下雪 -->
     <script src="./js/snowman.js"></script>
