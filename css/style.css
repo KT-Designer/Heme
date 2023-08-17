@@ -12,6 +12,13 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Roboto', sans-serif;
     cursor: url(../images/cursor.png), pointer;
+
+}
+
+/* AOS甘擾跑版 */
+body,
+html {
+    overflow-x: hidden;
 }
 
 a:hover {
