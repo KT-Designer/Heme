@@ -260,9 +260,9 @@
         <div class="myclass">
             <img src="./images/basebn.jpg" alt="">
         </div>
-        <div class="container pt-2" data-aos="fade-left" data-aos-duration="600">
+        <div class="container pt-2">
             <div class="row g-4">
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="600">
                     <div class="card">
                         <div class="pic">
                             <img src="./images/base1.png" alt="" class="img-fluid">
@@ -584,9 +584,9 @@
         <div class="myclass">
             <img src="./images/cleanbn.jpg" alt="">
         </div>
-        <div class="container pt-2" data-aos="fade-up" data-aos-duration="600">
+        <div class="container pt-2">
             <div class="row g-4">
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-duration="600">
                     <div class="card">
                         <div class="pic">
                             <img src="./images/clean1.png" alt="" class="img-fluid">
@@ -680,14 +680,7 @@
     <!-- AOS淡進淡出 -->
     <script src="./js/aos.js"></script>
     <script>
-        AOS.init();
-        // 禁用手機和平板
-        AOS.init({
-            disable: "phone"
-        });
-        AOS.init({
-            disable: "tablet"
-        });
+        AOS.init(); s
         // 只播一次
         AOS.init({
             once: true
