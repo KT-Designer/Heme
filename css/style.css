@@ -15,7 +15,7 @@ body {
 
 }
 
-/* AOS甘擾跑版 */
+/* AOS干擾跑版 */
 body,
 html {
     overflow-x: hidden;
@@ -391,18 +391,22 @@ a:hover {
 
 
 /* footer */
-footer p {
+footer .row {
     color: #FFFFFF;
     padding: 16px 10px 16px 10px;
     background-color: #022E31;
     box-shadow: 0px -18px 75px 0px rgba(0, 0, 0, 0.98);
     font-size: 12px;
+
+
+
 }
 
-footer img {
-    max-width: 30px;
-}
 
+
+footer .row svg:hover path {
+    fill: #a80006;
+}
 
 
 
