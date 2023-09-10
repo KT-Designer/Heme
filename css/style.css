@@ -375,6 +375,7 @@ a:hover {
 }
 
 .base .card h6 {
+    font-family: 'Noto Sans TC';
     font-weight: 500;
 }
 
@@ -385,6 +386,7 @@ a:hover {
 
 .base .card .sale {
     font-size: 26px;
+    font-family: 'Roboto';
     font-weight: 900;
     color: #a80006;
 }
@@ -413,7 +415,7 @@ footer .row svg:hover path {
 
 @media screen and (max-width:992px) {
     .kv_pc .pic {
-        width: 100vh;
+        width: 100vw;
         height: 667px;
         object-fit: cover;
     }
